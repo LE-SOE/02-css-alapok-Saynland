@@ -1,14 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Első oldalam</title>
+    <title>Bemutatkozás</title>
 </head>
 
 <body>
-
+    <div id="paper">
+        <h1>Göndöcs Gergő</h1>
+        <div style="display: flex; flex-direction: row; margin-left: 12rem; margin-right: 12rem;">
+            <img src="DSC_3575.png" alt="" width="180px">
+            <p style="display: inline; text-align: left; padding-left: 3rem;">Másodéves egyetemista vagyok a Soproni Egyetem Faipari Mérnöki és Kreatívipari Kar Kommunikáció- és
+                médiatudomámy
+                szakán. <br>
+                A jövőképem még a kirajzolódás színterein mozog, de a sportok iránti szeretetemből fakadóan legfőbb
+                vágyam a <b>sportkommentátori</b> pályára lépés. <br>
+                Szabadidőm általában a barátaimmal töltöm, vagy virtuálisformában,
+                vagy személyesen találkozunk és emellett edzőterembe is járunk. <br>
+                Érdekesség még, hogy idegösszeroppanás nélkül,
+                de öt alkalommal játszottam végig az Elden Ring névre hallgató soulsborn videójátékot.</p>
+            <p>
+        </div>
+        <h2>Erősségeim közé tartozik:</h2>
+        <ul>
+            <li>jó beszélőkészség</li>
+            <li>nyitottság a legtöbb ember felé</li>
+            <li>társalgás angolul szinte bárkivel</li>
+        </ul>
+        </p>
+        <p>
+        <h2>Hobbijaim:</h2>
+        <ul>
+            <li>Videójátékozás:</li>
+            <li>League of Legends</li>
+            <li>ARK Survival Ascended</li>
+            <li>Rocket League</li>
+            <li>Kosárlabda játék/nézés</li>
+        </ul>
+        <h2>Filmek, sorozatok, animék:</h2>
+        </p>
+        <h4><u>A Gyűrűk ura</u></h4>
+        A Gyűrűk Ura-sorozat Peter Jackson új-zélandi rendező és <a
+            href="https://en.wikipedia.org/wiki/J._R._R._Tolkien" target="_blank">J. R. R. Tolkien</a> angol író azonos
+        című regényén alapuló,
+        1999-től 2003-ig készített, 2001-ben, 2002-ben és 2003-ban bemutatott új-zélandi-amerikai fantasy-filmsorozata.
+        <h4 style="text-decoration: underline;">Game of Thrones</h4>
+        A Trónok harca (eredeti címe: Game of Thrones) 2011 és 2019 között bemutatott amerikai televíziós fantasy
+        sorozat,
+        amelyet az HBO készített <a href="https://en.wikipedia.org/wiki/George_R._R._Martin" target="_blank">George R.
+            R. Martin</a> nagy sikerű regénysorozata, A tűz és jég dala alapján.
+        <h4 class="alahuzott">Attack on Titan</h4>
+        Az emberek úgy vélték, örökre biztonságban tartózkodnak, amíg nem háborgatják a várost körülölelő falakon kívül
+        eső
+        környezetet. Egy nap azonban a stagnáló elképzelés és oltalomérzet érvényét veszti. A vérfagyasztó külsejű,
+        gigantikus Titánok, avagy az emberi húsra eltökélten éhező szörnyetegek a társadalom kiirtásába fognak, és
+        kezdetét
+        veszi az elkerülhetetlen: egy veszedelmes, tömérdek kockázatot magába foglaló háború az emberek és a titkokat
+        rejtő
+        óriások között.
+        <h4 class="alahuzott">Jujutsu Kaisen</h4>
+        Főszereplőnk egy tipikus shounen protagonista, Itadori Yuji. Habár kimagasló erejének hála jeleskedik a
+        sportokban,
+        őt inkább az okkult dolgok érdeklik, és barátaival klubot alapítva kutatnak a természetfeletti után. Persze az
+        élet
+        nem fenékig tejfel a számára sem, és miután egyetlen nagyapja halálos ágyán megígérteti vele, hogy segíteni fog
+        az
+        embereken, főhősünk belefut abba az emberbe, aki örökre megváltoztatja az életét.
+        <h4 class="alahuzott">JoJo's Bizarre Adventures</h4>
+        JJBA follows various members of the Joestar family as they use their supernatural fighting spirits—called
+        Stands—to
+        defeat a series of increasingly outlandish Big Bads.
+        <br>
+        <button style="margin-top: 5rem;" onclick="{
+            /* ebben segítettek :D */
+            var szam= document.getElementById('likes'); 
+            szam.innerText = Number(szam.innerHTML) + 1;
+            }">Like</button> <span id="likes">0</span> kedvelés.
+    </div>
 </body>
+<style>
+    /* itt találtam: https://stackoverflow.com/questions/14585101/old-paper-background-texture-with-just-css */
+    #paper {
+        margin: 5rem 2rem;
+        padding: 4em;
+        box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+        background: #fffef0;
+        filter: url(#wavy2);
+    }
+
+    * {
+        font-family: 'Courier New';
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        width: fit-content;
+        font-style: italic;
+        margin: auto;
+    }
+
+    .alahuzott {
+        text-decoration: underline;
+    }
+
+    h4 {
+        color: rgb(58, 58, 58);
+    }
+</style>
 
 </html>
