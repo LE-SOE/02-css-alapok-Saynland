@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hozzaad() {
+            let adat = document.getElementById("adat").value
+            let lista = document.getElementById("lista")
+            let elem = document.createElement("li")
+        
+            elem.innerHTML = adat
+            lista.appendChild(elem)
+        }
+    </script>
+</head>
+<body> 
+    <input type="adat">
+    <button onclick="hozzaad">Add hozzá</button>
+    <ul id="lista">Az én listám:
+    </ul>
+
+</body>
+</html>
